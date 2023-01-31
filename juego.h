@@ -3,14 +3,17 @@
 
 #include <QMainWindow>
 #include <QDebug>
+#include <QPainter>
+#include <QImage>
 #include "configuracion.h"
 #include "circulo.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Juego; }
 QT_END_NAMESPACE
 
-class Juego : public QMainWindow
+class Juego : public QMainWindow , public Circulo
 {
     Q_OBJECT
 
@@ -31,8 +34,14 @@ private slots:
 
     void on_actionSalir_triggered();
 
+    virtual void paintEvent(QPaintEvent *event);
+
 private:
     Ui::Juego *ui;
     Circulo *m_circulo;
+    QImage *mImagen;
+    QPainter *mPainter;
+
+    void dibujar();
 };
 #endif // JUEGO_H

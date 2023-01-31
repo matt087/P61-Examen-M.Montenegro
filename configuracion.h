@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QColorDialog>
+#include <QInputDialog>
 
 namespace Ui {
 class Configuracion;

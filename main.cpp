@@ -1,3 +1,5 @@
+//Mateo Montenegro - 1725578775
+
 #include "juego.h"
 
 #include <QApplication>
