@@ -50,3 +50,13 @@ int Configuracion::dimension() const
     return m_dimension;
 }
 
+
+Configuracion::Configuracion(const QColor &color, int dimension) : m_color(color),
+    m_dimension(dimension)
+{}
+
+void Configuracion::on_inDimension_sliderMoved(int position)
+{
+    m_dimension = position;
+}
+

@@ -41,6 +41,7 @@ private:
     Circulo *m_circulo;
     QImage *mImagen;
     QPainter *mPainter;
+    QColor actual;
 
     void dibujar();
 };

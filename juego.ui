@@ -25,6 +25,13 @@
   <property name="windowTitle">
    <string>Juego</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/Recursos/bosquejo.png</normaloff>:/Recursos/bosquejo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -138,16 +145,28 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionConfigraci0n">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/configuracion.png</normaloff>:/Recursos/configuracion.png</iconset>
+   </property>
    <property name="text">
     <string>Configración</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
    </property>
   </action>
   <action name="actionSalir">
    <property name="text">
     <string>Salir</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>

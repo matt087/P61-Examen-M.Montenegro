@@ -15,6 +15,7 @@ class Configuracion : public QDialog
 
 public:
     explicit Configuracion(QWidget *parent = nullptr);
+    Configuracion(const QColor &color, int dimension);
     ~Configuracion();
 
     const QColor &color() const;
@@ -25,6 +26,8 @@ public:
 
 private slots:
     void on_btnColor_released();
+
+    void on_inDimension_sliderMoved(int position);
 
 private:
     Ui::Configuracion *ui;

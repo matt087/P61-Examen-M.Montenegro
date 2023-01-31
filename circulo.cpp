@@ -4,13 +4,17 @@ Circulo::Circulo()
     :QPoint(0,0)
 {
     this->m_alto=20;
-     this->m_ancho=20;
-     this->m_radio=10;
+    this->m_ancho=20;
+    this->m_radio=10;
 }
 
 Circulo::Circulo(int xpos, int ypos)
     :QPoint(xpos, ypos)
-{}
+{
+    this->m_alto=20;
+    this->m_ancho=20;
+    this->m_radio=10;
+}
 
 int Circulo::alto() const
 {
@@ -40,5 +44,25 @@ int Circulo::ancho() const
 void Circulo::setAncho(int newAncho)
 {
     m_ancho = newAncho;
+}
+
+int Circulo::corx() const
+{
+    return m_corx;
+}
+
+void Circulo::setCorx(int newCorx)
+{
+     m_corx=newCorx;
+}
+
+int Circulo::cory() const
+{
+    return m_cory;
+}
+
+void Circulo::setCory(int newCory)
+{
+     m_cory=newCory;
 }
 

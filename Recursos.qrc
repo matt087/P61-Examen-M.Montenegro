@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Recursos/bosquejo.png</file>
+        <file>Recursos/configuracion.png</file>
+    </qresource>
+</RCC>

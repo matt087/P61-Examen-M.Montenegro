@@ -19,10 +19,18 @@ public:
     int ancho() const;
     void setAncho(int newAncho);
 
+    int corx() const;
+    void setCorx(int newCorx);
+
+    int cory() const;
+    void setCory(int newCory);
+
 private:
     int m_alto;
     int m_radio;
     int m_ancho;
+    int m_corx;
+    int m_cory;
 
 
 
